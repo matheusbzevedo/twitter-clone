@@ -148,4 +148,20 @@ export const ProfileData = styled.div`
   }
 `;
 
-export const ExitIcon = styled(ExitToApp)``;
+export const ExitIcon = styled(ExitToApp)`
+  display: none;
+
+  @media (min-width: 1280px) {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+    &:hover {
+      > path {
+        color: var(--like);
+      }
+    }
+  }
+`;
